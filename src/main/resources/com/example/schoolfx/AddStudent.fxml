@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolfx.controllers.AddStudentController">
+   <children>
+      <Label layoutX="198.0" layoutY="14.0" text="Přidat Studenta">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="92.0" text="Vybrat Třídu:" />
+      <ComboBox fx:id="classList" layoutX="264.0" layoutY="88.0" prefWidth="150.0" />
+      <TextField fx:id="studentName" layoutX="264.0" layoutY="139.0" />
+      <Label layoutX="178.0" layoutY="143.0" text="Jméno Studenta" />
+      <Button fx:id="addStudent" layoutX="246.0" layoutY="334.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Přidat Studenta" />
+      <Label fx:id="info" layoutX="299.0" layoutY="51.0" />
+      <Button fx:id="menu" layoutX="503.0" layoutY="361.0" mnemonicParsing="false" text="Hlavní Menu" />
+   </children>
+</AnchorPane>
