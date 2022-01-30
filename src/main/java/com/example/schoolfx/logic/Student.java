@@ -1,11 +1,10 @@
 package com.example.schoolfx.logic;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Student {
     private String name;
-    private ArrayList<Mark> marks;
+    private ArrayList<Integer> marks = new ArrayList<Integer>();
 
     public Student(String name) {
         this.name = name;
@@ -19,11 +18,24 @@ public class Student {
         this.name = name;
     }
 
-    public ArrayList<Mark> getMarks() {
+    public ArrayList<Integer> getMarks() {
         return marks;
     }
 
-    public void setMarks(ArrayList<Mark> marks) {
+    public void setMarks(ArrayList<Integer> marks) {
         this.marks = marks;
+    }
+
+    public void addMark(int value){
+        marks.add(value);
+
+    }
+
+    public double totalNumOfMarks(){
+        double totalNum = 0;
+        for (int i:marks) {
+            totalNum = totalNum + i;
+        }
+        return totalNum/marks.size();
     }
 }

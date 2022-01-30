@@ -6,18 +6,17 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolfx.controllers.MainController">
    <children>
-      <Button fx:id="addMark" layoutX="14.0" layoutY="59.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Přidat Známku" />
+      <Button fx:id="addMark" layoutX="14.0" layoutY="59.0" mnemonicParsing="false" onAction="#switchToAddMark" prefHeight="52.0" prefWidth="108.16" text="Přidat Známku" />
       <Label alignment="CENTER" layoutX="216.0" layoutY="14.0" text="Hlavní Menu">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Button fx:id="addStudent" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Přidat Studenta" />
+      <Button fx:id="addStudent" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToAddStudent" prefHeight="52.0" prefWidth="108.16" text="Přidat Studenta" />
       <Button fx:id="addClass" layoutX="14.0" layoutY="244.0" mnemonicParsing="false" onAction="#switchToAddClass" prefHeight="52.0" prefWidth="108.16" text="Přidat Třídu" />
-      <Button fx:id="seeMark" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Zobrazit Průměr" />
-      <Button fx:id="changeMark" layoutX="477.0" layoutY="59.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Upravit Známku" />
-      <Button fx:id="changeStudent" layoutX="477.0" layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Upravit Studenta" />
-      <Button fx:id="changeClass" layoutX="477.0" layoutY="244.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Upravit Třídu" />
-      <Button fx:id="end" layoutX="477.0" layoutY="334.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Ukončit Program" />
+      <Button fx:id="seeMark" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#switchToSeeMark" prefHeight="52.0" prefWidth="108.16" text="Zobrazit Průměr" />
+      <Button fx:id="changeStudent" layoutX="477.0" layoutY="59.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Upravit Studenta" />
+      <Button fx:id="changeClass" layoutX="477.0" layoutY="192.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Upravit Třídu" />
+      <Button fx:id="end" layoutX="477.0" layoutY="334.0" mnemonicParsing="false" onAction="#endApplication" prefHeight="52.0" prefWidth="108.16" text="Ukončit Program" />
    </children>
 </AnchorPane>
