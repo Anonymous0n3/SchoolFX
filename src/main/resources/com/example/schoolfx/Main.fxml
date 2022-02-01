@@ -15,8 +15,7 @@
       <Button fx:id="addStudent" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" onAction="#switchToAddStudent" prefHeight="52.0" prefWidth="108.16" text="Přidat Studenta" />
       <Button fx:id="addClass" layoutX="14.0" layoutY="244.0" mnemonicParsing="false" onAction="#switchToAddClass" prefHeight="52.0" prefWidth="108.16" text="Přidat Třídu" />
       <Button fx:id="seeMark" layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#switchToSeeMark" prefHeight="52.0" prefWidth="108.16" text="Zobrazit Průměr" />
-      <Button fx:id="changeStudent" layoutX="477.0" layoutY="59.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Upravit Studenta" />
-      <Button fx:id="changeClass" layoutX="477.0" layoutY="192.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="108.16" text="Upravit Třídu" />
+      <Button fx:id="changeStudent" layoutX="477.0" layoutY="59.0" mnemonicParsing="false" onAction="#switchToEditStudent" prefHeight="52.0" prefWidth="108.16" text="Upravit Studenta" />
       <Button fx:id="end" layoutX="477.0" layoutY="334.0" mnemonicParsing="false" onAction="#endApplication" prefHeight="52.0" prefWidth="108.16" text="Ukončit Program" />
    </children>
 </AnchorPane>

@@ -94,6 +94,17 @@ public class MainController implements Initializable {
         stage.showAndWait();
     }
 
+    public void switchToEditStudent(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("EditStudent.fxml"));
+        Parent parent = fxmlLoader.load();
+
+        Scene scene = new Scene(parent);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+    }
+
     public void endApplication (ActionEvent event) throws IOException {
         IOLogic.writeToFile();
 
