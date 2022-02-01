@@ -64,6 +64,7 @@ public class AddStudentController implements Initializable {
                 classOne.setStudents(students);
                 info.setText("Student added successfully");
             }
+
         }
     }
 }

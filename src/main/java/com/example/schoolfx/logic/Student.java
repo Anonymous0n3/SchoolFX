@@ -1,8 +1,9 @@
 package com.example.schoolfx.logic;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Student {
+public class Student implements Serializable {
     private String name;
     private ArrayList<Integer> marks = new ArrayList<Integer>();
 

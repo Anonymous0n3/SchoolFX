@@ -1,6 +1,7 @@
 package com.example.schoolfx.controllers;
 
 import com.example.schoolfx.Application;
+import com.example.schoolfx.logic.IOLogic;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -93,7 +94,9 @@ public class MainController implements Initializable {
         stage.showAndWait();
     }
 
-    public void endApplication (ActionEvent event){
+    public void endApplication (ActionEvent event) throws IOException {
+        IOLogic.writeToFile();
+
         Platform.exit();
         System.exit(0);
     }

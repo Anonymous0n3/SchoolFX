@@ -1,9 +1,12 @@
 package com.example.schoolfx;
 
+import com.example.schoolfx.logic.IOLogic;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class Application extends javafx.application.Application {
@@ -16,7 +19,10 @@ public class Application extends javafx.application.Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        File myFile = new File("src\\main\\java\\com\\example\\schoolfx\\output\\file.ser");
+        myFile.createNewFile();
+        IOLogic.readFromFile();
         launch();
     }
 }
